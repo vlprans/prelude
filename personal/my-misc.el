@@ -4,5 +4,8 @@
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 (server-start)
 
-(guru-mode -1)
-(whitespace-mode -1)
+(add-hook 'prog-mode-hook
+          (lambda ()
+            (prelude-turn-off-whitespace)
+            (guru-mode -1))
+          t)

@@ -1,0 +1,6 @@
+[submodule "vendor/emacs-rails"]
+	path = vendor/emacs-rails
+	url = https://github.com/remvee/emacs-rails.git
+[submodule "vendor/rhtml"]
+	path = vendor/rhtml
+	url = https://github.com/eschulte/rhtml.git
