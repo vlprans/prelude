@@ -7,5 +7,6 @@
 (add-hook 'prog-mode-hook
           (lambda ()
             (prelude-turn-off-whitespace)
-            (guru-mode -1))
+            (guru-mode -1)
+            (linum-mode 1))
           t)
