@@ -1,5 +1,10 @@
 (add-to-list 'load-path (expand-file-name (concat prelude-vendor-dir "emacs-rails/")))
 (add-to-list 'load-path (expand-file-name (concat prelude-vendor-dir "rhtml/")))
+(add-to-list 'auto-mode-alist '("\\.rake$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("Rakefile$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.gemspec$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("Gemfile$" . ruby-mode))
+
 (require 'rails)
 (require 'rhtml-mode)
 
