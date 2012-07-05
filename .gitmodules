@@ -4,3 +4,6 @@
 [submodule "vendor/rhtml"]
 	path = vendor/rhtml
 	url = https://github.com/eschulte/rhtml.git
+[submodule "vendor/Enhanced-Ruby-Mode"]
+	path = vendor/Enhanced-Ruby-Mode
+	url = git://github.com/jacott/Enhanced-Ruby-Mode.git

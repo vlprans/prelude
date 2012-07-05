@@ -5,11 +5,16 @@
 (add-to-list 'auto-mode-alist '("\\.gemspec$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Gemfile$" . ruby-mode))
 
+(add-to-list 'load-path (concat prelude-vendor-dir "Enhanced-Ruby-Mode"))
+(setq ruby-program "~/.rbenv/shims/ruby")
+(setq enh-ruby-program  "~/.rbenv/shims/ruby")
+
+(require 'ruby-mode)
+
 (require 'rails)
 (require 'rhtml-mode)
 
 (require 'rsense)
-(require 'ruby-mode)
 (require 'auto-complete)
 (require 'linum)
 
