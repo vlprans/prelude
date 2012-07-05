@@ -9,10 +9,14 @@
 (require 'rhtml-mode)
 
 (require 'rsense)
+(require 'ruby-mode)
+(require 'auto-complete)
+(require 'linum)
 
 (add-hook 'ruby-mode-hook
           (lambda ()
             (auto-complete-mode 1)
+            (linum-mode 1)
             (local-set-key (kbd "C-c .") 'ac-complete-rsense)
             (add-to-list 'ac-sources 'ac-source-rsense-method)
             (add-to-list 'ac-sources 'ac-source-rsense-constant)))
