@@ -17,5 +17,6 @@
           (lambda ()
             (prelude-turn-off-whitespace)
             (guru-mode -1)
+            (auto-fill-mode -1)
             (linum-mode))
           t)
