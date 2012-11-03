@@ -5,3 +5,6 @@
 (global-set-key (kbd "C-<right>") 'enlarge-window-horizontally)
 (global-set-key (kbd "C-<down>") 'shrink-window)
 (global-set-key (kbd "C-<up>") 'enlarge-window)
+
+(setq mac-command-modifier 'meta)
+(setq mac-option-modifier 'control)
