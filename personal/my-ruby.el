@@ -9,13 +9,14 @@
 (add-to-list 'auto-mode-alist '("\\.coffee\\.erb$" . coffee-mode))
 
 (add-to-list 'load-path (concat prelude-vendor-dir "Enhanced-Ruby-Mode"))
-(setq ruby-program "~/.rbenv/shims/ruby")
-(setq enh-ruby-program  "~/.rbenv/shims/ruby")
+(setq ruby-program "~/.rbenv/versions/1.9.3-p194/bin/ruby")
+(setq enh-ruby-program "~/.rbenv/versions/1.9.3-p194/bin/ruby")
 
 (require 'ruby-mode)
 
 (require 'rails)
 (require 'rhtml-mode)
+(require 'ruby-tools)
 
 (require 'rsense)
 (require 'auto-complete)
