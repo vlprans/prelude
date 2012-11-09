@@ -2,6 +2,7 @@
 (require 'hamlet-mode)
 
 (add-to-list 'auto-mode-alist '(".xmobarrc" . haskell-mode))
+(add-to-list 'auto-mode-alist '(".lhs" . haskell-mode))
 
 (add-hook 'haskell-mode-hook
           (lambda ()
