@@ -13,9 +13,6 @@
 (setq enh-ruby-program "~/.rbenv/versions/1.9.3-p194/bin/ruby")
 
 (require 'ruby-mode)
-
-(require 'rails)
-(require 'rhtml-mode)
 (require 'ruby-tools)
 
 (require 'rsense)
