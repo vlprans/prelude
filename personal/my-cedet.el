@@ -15,4 +15,4 @@
 ;; Activate semantic
 (semantic-mode 1)
 
-(require 'eassist)
+;(require 'eassist)

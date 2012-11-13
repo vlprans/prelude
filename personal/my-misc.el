@@ -15,6 +15,8 @@
 
 (add-hook 'prog-mode-hook
           (lambda ()
+            (whitespace-turn-off)
+            (turn-off-guru-mode)
             (guru-mode -1)
             (auto-fill-mode -1)
             (linum-mode))
