@@ -7,3 +7,6 @@
 [submodule "vendor/Enhanced-Ruby-Mode"]
 	path = vendor/Enhanced-Ruby-Mode
 	url = git://github.com/jacott/Enhanced-Ruby-Mode.git
+[submodule "vendor/scamacs"]
+	path = vendor/scamacs
+	url = git://github.com/RayRacine/scamacs.git
