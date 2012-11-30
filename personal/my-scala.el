@@ -67,6 +67,9 @@ little more place."
   (ensime)
 )
 
+(custom-set-variables
+ '(ensime-inf-cmd-template '("sbt" "console"))
+ )
 
 ;; scala mode hooks
 (defun scala-setup ()
