@@ -60,10 +60,44 @@ little more place."
   (ensime-set-type-inspector-tree-buffer)
   (select-window (previous-window (previous-window (selected-window) 0) 0)))
 
+
+(ecb-layout-define "right-my" right
+  "This function creates the following layout:
+
+   -------------------------------------------------------
+   |                                      |              |
+   |                                      |              |
+   |                                      |              |
+   |                                      |              |
+   |                                      |              |
+   |                                      |              |
+   |                                      |              |
+   |             Edit                     |              |
+   |                                      |              |
+   |                                      |              |
+   |                                      |              |
+   |                                      |  Methods     |
+   |                                      |              |
+   |                                      |              |
+   |                                      |              |
+   -------------------------------------------------------
+   |                                                     |
+   |                    Compilation                      |
+   |                                                     |
+   -------------------------------------------------------
+
+If you have not set a compilation-window in `ecb-compile-window-height' then
+the layout contains no persistent compilation window and the other windows get a
+little more place."
+  (let ((edit-win (previous-window (selected-window) 0)))
+    (ensime-set-type-inspector-tree-buffer)
+    (select-window edit-win)))
+
+
 (defun ensime-ecb ()
   (interactive)
   (ecb-activate)
-  (ecb-layout-switch "leftright-my")
+  (ecb-layout-switch "right-my")
   (ensime)
 )
 
