@@ -72,18 +72,17 @@ little more place."
    |                                      |              |
    |                                      |              |
    |                                      |              |
-   |             Edit                     |              |
+   |             Edit                     |  Methods     |
    |                                      |              |
    |                                      |              |
    |                                      |              |
-   |                                      |  Methods     |
    |                                      |              |
    |                                      |              |
    |                                      |              |
-   -------------------------------------------------------
-   |                                                     |
-   |                    Compilation                      |
-   |                                                     |
+   |                                      |              |
+   |                                      |              |
+   |                                      |              |
+   |                                      |              |
    -------------------------------------------------------
 
 If you have not set a compilation-window in `ecb-compile-window-height' then
