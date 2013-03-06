@@ -4,8 +4,8 @@
 (add-to-list 'load-path (expand-file-name "scamacs/ecb" prelude-vendor-dir))
 (add-to-list 'load-path (expand-file-name "scamacs/scala" prelude-vendor-dir))
 (add-to-list 'load-path (expand-file-name "scamacs/scamacs" prelude-vendor-dir))
-(add-to-list 'load-path (expand-file-name "scamacs/ensime/dist_2.9.2/elisp" prelude-vendor-dir))
-(add-to-list 'exec-path (expand-file-name "scamacs/ensime/dist_2.9.2/bin" prelude-vendor-dir))
+(add-to-list 'load-path (expand-file-name "ensime/dist/elisp" prelude-vendor-dir))
+(add-to-list 'exec-path (expand-file-name "ensime/dist/bin" prelude-vendor-dir))
 
 ;; (add-to-list 'load-path (expand-file-name "ensime/elisp" prelude-vendor-dir))
 ;; (add-to-list 'exec-path "ensime/bin")
