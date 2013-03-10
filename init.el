@@ -93,7 +93,6 @@ by Prelude.")
 ;; reduce the frequency of garbage collection by making it happen on
 ;; each 50MB of allocated data (the default is on every 0.76MB)
 (setq gc-cons-threshold 50000000)
-;(require 'dash)
 
 ;; warn when opening files bigger than 100MB
 (setq large-file-warning-threshold 100000000)
@@ -102,6 +101,9 @@ by Prelude.")
 (when (file-exists-p prelude-personal-preload-dir)
   (message "Loading personal configuration files in %s..." prelude-personal-preload-dir)
   (mapc 'load (directory-files prelude-personal-preload-dir 't "^[^#\.].*el$")))
+
+(add-to-list 'load-path prelude-vendor-local-dir)
+(require 'dash)
 
 (message "Loading Prelude's core...")
 
