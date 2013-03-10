@@ -97,7 +97,6 @@ little more place."
   (interactive)
   (ecb-activate)
   (ecb-layout-switch "right-my")
-  (ensime)
 )
 
 (custom-set-variables
@@ -115,4 +114,3 @@ little more place."
 
 (add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
 (add-hook 'scala-mode-hook 'scala-setup)
-
