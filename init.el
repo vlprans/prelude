@@ -94,7 +94,7 @@ by Prelude.")
 ;; each 50MB of allocated data (the default is on every 0.76MB)
 (setq gc-cons-threshold 50000000)
 (add-to-list 'load-path prelude-vendor-local-dir)
-
+(require 'dash)
 
 ;; warn when opening files bigger than 100MB
 (setq large-file-warning-threshold 100000000)

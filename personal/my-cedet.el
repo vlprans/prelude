@@ -1,5 +1,3 @@
-;(load-file (expand-file-name "cedet/cedet-devel-load.el" prelude-vendor-local-dir))
-(add-to-list 'load-path (expand-file-name "cedet/contrib" prelude-vendor-local-dir))
 
 (add-to-list 'semantic-default-submodes 'global-semanticdb-minor-mode)
 (add-to-list 'semantic-default-submodes 'global-semantic-mru-bookmark-mode)
