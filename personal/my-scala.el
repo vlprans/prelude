@@ -1,7 +1,6 @@
 (add-to-list 'auto-mode-alist '(".scala" . scala-mode))
 (add-to-list 'auto-mode-alist '(".sbt" . scala-mode))
 
-(add-to-list 'load-path (expand-file-name "scamacs/ecb" prelude-vendor-dir))
 (add-to-list 'load-path (expand-file-name "scamacs/scala" prelude-vendor-dir))
 (add-to-list 'load-path (expand-file-name "scamacs/scamacs" prelude-vendor-dir))
 (add-to-list 'load-path (expand-file-name "ensime/dist/elisp" prelude-vendor-dir))
