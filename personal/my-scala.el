@@ -15,6 +15,7 @@
 ;; Ensime & ECB
 (require 'scala-mode)
 (require 'ensime)
+(require 'assoc) ; for ECB compatibility
 (require 'ecb)
 (require 'ensime-tree-type-inspector)
 (require 'ensime-tree-package-inspector)
