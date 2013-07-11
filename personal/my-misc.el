@@ -21,3 +21,5 @@
             (auto-fill-mode -1)
             (linum-mode))
           t)
+
+(setq projectile-completion-system 'grizzl)
