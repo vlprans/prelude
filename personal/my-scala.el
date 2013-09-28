@@ -110,6 +110,7 @@ little more place."
   (toggle-truncate-lines t)
   (show-paren-mode t)
   (ido-mode t)
+  (linum-mode t)
   )
 
 (add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
