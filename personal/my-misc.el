@@ -7,8 +7,9 @@
 (setenv "SHELL" "/bin/zsh")
 (setq shell-file-name "zsh")
 
-(require 'linum)
+(setq prelude-guru nil)
 
+(require 'linum)
 (setq linum-format "%d ")
 ;(global-linum-mode)
 (server-start)
@@ -16,8 +17,6 @@
 (add-hook 'prog-mode-hook
           (lambda ()
             (whitespace-turn-off)
-            (turn-off-guru-mode)
-            (guru-mode -1)
             (auto-fill-mode -1)
             (linum-mode))
           t)
