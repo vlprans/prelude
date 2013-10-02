@@ -1,13 +1,9 @@
 (add-to-list 'auto-mode-alist '(".scala" . scala-mode))
 (add-to-list 'auto-mode-alist '(".sbt" . scala-mode))
 
-(add-to-list 'load-path (expand-file-name "scamacs/scala" prelude-vendor-dir))
-(add-to-list 'load-path (expand-file-name "scamacs/scamacs" prelude-vendor-dir))
 (add-to-list 'load-path (expand-file-name "ensime/dist/elisp" prelude-vendor-dir))
 (add-to-list 'exec-path (expand-file-name "ensime/dist/bin" prelude-vendor-dir))
-
-;; (add-to-list 'load-path (expand-file-name "ensime/elisp" prelude-vendor-dir))
-;; (add-to-list 'exec-path "ensime/bin")
+(add-to-list 'exec-path (expand-file-name "ensime/dist" prelude-vendor-dir))
 
 (add-to-list 'auto-mode-alist '("\\.scala$" . scala-mode))
 (add-to-list 'auto-mode-alist '("\\.sbt$" . scala-mode))
@@ -17,8 +13,6 @@
 (require 'ensime)
 (require 'assoc) ; for ECB compatibility
 (require 'ecb)
-(require 'ensime-tree-type-inspector)
-(require 'ensime-tree-package-inspector)
 
 
 (ecb-layout-define "leftright-my" left-right
