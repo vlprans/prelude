@@ -103,6 +103,7 @@ little more place."
   (setq indent-tabs-mode nil)
   (toggle-truncate-lines t)
   (show-paren-mode t)
+  (electric-pair-mode t)
   (ido-mode t)
   (linum-mode t)
   )
