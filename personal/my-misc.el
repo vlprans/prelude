@@ -22,3 +22,5 @@
           t)
 
 (setq projectile-completion-system 'grizzl)
+
+(ido-mode t)
