@@ -102,8 +102,7 @@ by Prelude.")
   (message "Loading personal configuration files in %s..." prelude-personal-preload-dir)
   (mapc 'load (directory-files prelude-personal-preload-dir 't "^[^#\.].*el$")))
 
-(add-to-list 'load-path prelude-vendor-local-dir)
-(require 'dash)
+;(require 'dash)
 
 (message "Loading Prelude's core...")
 
