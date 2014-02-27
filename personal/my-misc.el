@@ -23,4 +23,6 @@
 
 (setq projectile-completion-system 'grizzl)
 
+(setq ack-and-a-half-arguments '(""))
+
 (ido-mode t)
