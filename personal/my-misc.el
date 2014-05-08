@@ -26,3 +26,5 @@
 (setq ack-and-a-half-arguments '(""))
 
 (ido-mode t)
+
+(add-to-list 'auto-mode-alist '("\\.apib$" . markdown-mode))
