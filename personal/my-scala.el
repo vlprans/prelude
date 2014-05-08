@@ -1,14 +1,16 @@
 (add-to-list 'auto-mode-alist '(".scala" . scala-mode))
 (add-to-list 'auto-mode-alist '(".sbt" . scala-mode))
 
-(add-to-list 'exec-path (expand-file-name "ensime/dist/bin" prelude-vendor-dir))
-(add-to-list 'exec-path (expand-file-name "ensime/dist" prelude-vendor-dir))
+(let ((ensime-root (expand-file-name "ensime/dist" prelude-vendor-dir)))
+  (setq ensime-default-server-root ensime-root)
+  (add-to-list 'exec-path ensime-root)
+  (add-to-list 'load-path ensime-root))
 
 (add-to-list 'auto-mode-alist '("\\.scala$" . scala-mode))
 (add-to-list 'auto-mode-alist '("\\.sbt$" . scala-mode))
 
 ;; Ensime & ECB
-(require 'scala-mode)
+(require 'scala-mode2)
 (require 'ensime)
 (require 'assoc) ; for ECB compatibility
 (require 'ecb)
