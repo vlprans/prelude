@@ -10,6 +10,3 @@
 [submodule "vendor/scamacs"]
 	path = vendor/scamacs
 	url = git://github.com/RayRacine/scamacs.git
-[submodule "vendor/ensime"]
-	path = vendor/ensime
-	url = git://github.com/aemoncannon/ensime.git
