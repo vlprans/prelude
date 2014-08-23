@@ -8,6 +8,7 @@
 (add-to-list 'auto-mode-alist '("Gemfile$" . enh-ruby-mode))
 (add-to-list 'auto-mode-alist '("Berksfile$" . enh-ruby-mode))
 (add-to-list 'auto-mode-alist '("Vagrantfile$" . enh-ruby-mode))
+(add-to-list 'auto-mode-alist '("Podfile$" . ruby-mode))
 
 (add-to-list 'auto-mode-alist '("\\.js\\.erb$" . javascript-mode))
 (add-to-list 'auto-mode-alist '("\\.coffee\\.erb$" . coffee-mode))
