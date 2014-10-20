@@ -12,7 +12,6 @@
 (require 'linum)
 (setq linum-format "%d ")
 ;(global-linum-mode)
-(server-start)
 
 (add-hook 'prog-mode-hook
           (lambda ()
