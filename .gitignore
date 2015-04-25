@@ -29,3 +29,4 @@ vendor-local/
 srecode-map.el
 var/
 /projectile-bookmarks.eld
+ensime/
