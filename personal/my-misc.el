@@ -25,3 +25,5 @@
 (ido-mode t)
 
 (add-to-list 'auto-mode-alist '("\\.apib$" . markdown-mode))
+
+(add-to-list 'auto-mode-alist '("\\.sls$" . yaml-mode))
