@@ -1,7 +1,8 @@
 (require 'clojure-mode)
 
 (add-hook 'clojure-mode-hook (lambda ()
-                               (clj-refactor-mode 1)))
+                               (clj-refactor-mode 1)
+                               (yas-minor-mode 1)))
 
 
 (define-clojure-indent
