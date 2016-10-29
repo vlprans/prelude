@@ -3,7 +3,7 @@
 (add-hook 'clojure-mode-hook (lambda ()
                                (company-mode 1)
                                (clj-refactor-mode 1)
-                               (paredit-mode 1)
+                               ; (paredit-mode 1)
                                (yas-minor-mode -1)
                                (rainbow-delimiters-mode 1)
                                (subword-mode 1)))
