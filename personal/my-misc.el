@@ -27,3 +27,6 @@
 (add-to-list 'auto-mode-alist '("\\.apib$" . markdown-mode))
 
 (add-to-list 'auto-mode-alist '("\\.sls$" . yaml-mode))
+
+(global-company-mode)
+(global-set-key (kbd "TAB") #'company-indent-or-complete-common)
